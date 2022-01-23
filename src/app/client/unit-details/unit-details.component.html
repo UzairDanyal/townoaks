@@ -1,0 +1,256 @@
+<app-spinner *ngIf="isLoading" ></app-spinner>
+<div *ngIf="imageVisiblitiy"
+	class="fancybox-container fancybox-show-toolbar fancybox-is-open fancybox-is-zoomable fancybox-can-swipe"
+	role="dialog" tabindex="-1" id="fancybox-container-12" style="transition-duration: 366ms;">
+	<div class="fancybox-bg"></div>
+	<div class="fancybox-inner">
+		<div class="fancybox-infobar"><span data-fancybox-index="">1</span>&nbsp;/&nbsp;<span
+				data-fancybox-count="">1</span></div>
+		<div class="fancybox-toolbar"><button data-fancybox-zoom="" class="fancybox-button fancybox-button--zoom"
+				title="Zoom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path
+						d="M18.7 17.3l-3-3a5.9 5.9 0 0 0-.6-7.6 5.9 5.9 0 0 0-8.4 0 5.9 5.9 0 0 0 0 8.4 5.9 5.9 0 0 0 7.7.7l3 3a1 1 0 0 0 1.3 0c.4-.5.4-1 0-1.5zM8.1 13.8a4 4 0 0 1 0-5.7 4 4 0 0 1 5.7 0 4 4 0 0 1 0 5.7 4 4 0 0 1-5.7 0z">
+					</path>
+				</svg></button><button data-fancybox-play="" class="fancybox-button fancybox-button--play"
+				title="Start slideshow" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24">
+					<path d="M6.5 5.4v13.2l11-6.6z"></path>
+				</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path d="M8.33 5.75h2.2v12.5h-2.2V5.75zm5.15 0h2.2v12.5h-2.2V5.75z"></path>
+				</svg></button><button data-fancybox-thumbs="" class="fancybox-button fancybox-button--thumbs"
+				title="Thumbnails" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path
+						d="M14.59 14.59h3.76v3.76h-3.76v-3.76zm-4.47 0h3.76v3.76h-3.76v-3.76zm-4.47 0h3.76v3.76H5.65v-3.76zm8.94-4.47h3.76v3.76h-3.76v-3.76zm-4.47 0h3.76v3.76h-3.76v-3.76zm-4.47 0h3.76v3.76H5.65v-3.76zm8.94-4.47h3.76v3.76h-3.76V5.65zm-4.47 0h3.76v3.76h-3.76V5.65zm-4.47 0h3.76v3.76H5.65V5.65z">
+					</path>
+				</svg></button><button (click)="togglePlanImage()" data-fancybox-close=""
+				class="fancybox-button fancybox-button--close" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24">
+					<path
+						d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z">
+					</path>
+				</svg></button></div>
+		<div class="fancybox-navigation"><button data-fancybox-prev=""
+				class="fancybox-button fancybox-button--arrow_left" title="Previous" disabled="">
+				<div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path d="M11.28 15.7l-1.34 1.37L5 12l4.94-5.07 1.34 1.38-2.68 2.72H19v1.94H8.6z"></path>
+					</svg></div>
+			</button><button data-fancybox-next="" class="fancybox-button fancybox-button--arrow_right" title="Next"
+				disabled="">
+				<div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path d="M15.4 12.97l-2.68 2.72 1.34 1.38L19 12l-4.94-5.07-1.34 1.38 2.68 2.72H5v1.94z"></path>
+					</svg></div>
+			</button></div>
+		<div class="fancybox-stage">
+			<div class="fancybox-slide fancybox-slide--current fancybox-slide--image fancybox-slide--complete">
+				<div class="fancybox-content"
+					style="transform: translate(204px, 44px) scale(1, 1); width: 854.248px; height: 489.333px;"><img
+						class="fancybox-image" src="assets/site/images/Apartments-floor-plan1to10.jpg"></div>
+			</div>
+		</div>
+		<div class="fancybox-caption">
+			<div class="fancybox-caption__body"></div>
+		</div>
+	</div>
+</div>
+
+<div *ngIf="!imageVisiblitiy" style="padding: 0; margin: 0;">
+	<section class="topNavLogo">
+		<div class="navInner">
+			<div class="logo-m">
+				<a routerLink="/"><img src="assets/logo_townOaks2.png" alt="logo top" class="dsk-view"></a>
+			</div>
+			<div class="headerCta"><a rel="nofollow" routerLink="/BookConsultation" class="ctaBtn rippleAnimWrap"> Book
+					Consultation <span class="rippleAnim"></span></a></div>
+		</div>
+	</section>
+	<section class="headerPadding"></section>
+	<section>
+		<div class="container">
+			<div class="breadcrums_wrap">
+				<ul>
+					<li><a routerlink="/">Home</a></li>
+					<li><a routerlink="/Prices">Choose your Unit</a></li>
+					<li>Unit No. {{unit.number}}</li>
+				</ul>
+			</div>
+			<div class="details_outer">
+				<div class="details_inner">
+					<h1>Unit No. {{unit.number}}</h1>
+					<div class="details_wrap">
+						<div class="details_left">
+							<ul class="details_row">
+								<li>
+									<p>{{unit.floor}}</p><span>Floor</span>
+								</li>
+								<li>
+									<p><b>{{unit.area | number:'1.0-2'}}</b> sq. ft.</p><span>Area</span>
+								</li>
+								<li>
+									<p>{{unit.beds}}</p> <span>Beds</span>
+								</li>
+								<li>
+									<p> {{unit.type}}</p> <span>Type</span>
+								</li>
+							</ul>
+							<div class="totalPriceWrap"><span class="totalPrice">{{unit.totalPrice | number:'1.0-2'
+									}}</span>
+								<p class="tpText">Total Price</p>
+							</div>
+						</div>
+						<div class="details_right" (click)="togglePlanImage()">
+							<a data-fancybox="floorPlanImg" class="fancybox">
+								<div class="floor_img bgGrad"><img
+										src="assets/site/images/Apartments-floor-plan1to10.jpg" alt="floor plan"></div>
+								<span class="zoomBtn"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.41283 21.4929H5.5488L9.84934 17.2082L8.7742 16.1289L4.48438 20.4029V18.5644H2.96094V23.0163H7.41283V21.4929Z"
+											fill="#221F1F"></path>
+										<path
+											d="M18.5879 21.4929V23.0163H23.0398V18.5644H21.5163V20.4029L17.2265 16.1289L16.1514 17.2082L20.4519 21.4929H18.5879Z"
+											fill="#221F1F"></path>
+										<path
+											d="M4.48438 5.59709L8.7742 9.87105L9.84934 8.79175L5.5488 4.50708H7.41283V2.98364H2.96094V7.43553H4.48438V5.59709Z"
+											fill="#221F1F"></path>
+										<path
+											d="M17.2265 9.87105L21.5163 5.59709V7.43553H23.0398V2.98364H18.5879V4.50708H20.4519L16.1514 8.79175L17.2265 9.87105Z"
+											fill="#221F1F"></path>
+										<path d="M0 0V26H26V0H0ZM24.4766 24.4766H1.52344V1.52344H24.4766V24.4766Z"
+											fill="#221F1F"></path>
+									</svg> Click to Zoom In </span>
+							</a>
+						</div>
+					</div>
+					<div class="details_action_btn">
+						<button type="button" name="button" routerLink="/BookConsultation"
+							class="ctaBtn contact_btn details_btn mr-3" tabindex="0">Book Consultation</button>
+						<button type="button" name="button" class="ctaBtn ctaDark generate_plan details_btn"
+							(click)="togglePlan()"> {{paymentPlanBtn}} Payment Plan </button>
+					</div>
+				</div>
+			</div>
+			<div *ngIf="planVisibility" class="paymen_table">
+				<div class="table-responsive">
+					<table cellspacing="0" cellpadding="0">
+						<thead>
+							<tr>
+								<th>Plan</th>
+								<th>Payment</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Down Payment</td>
+								<td>{{unit.downPayment | number:'1.0-2'}}</td>
+							</tr>
+							<tr>
+								<td>Monthly Installment</td>
+								<td>{{unit.monthlyInstallment | number:'1.0-2'}}</td>
+							</tr>
+							<tr>
+								<td>Total of 40 Monthly Installments (40 x {{unit.monthlyInstallment}} )</td>
+								<td>{{unit.monthlyInstallment * 40 | number:'1.0-2' }}</td>
+							</tr>
+							<tr>
+								<td>Semi Annual Installment</td>
+								<td>{{unit.semiAnnualInstallment}}</td>
+							</tr>
+							<tr>
+								<td>Total of 08 Semi Annual Installments (08 x {{unit.semiAnnualInstallment}})</td>
+								<td>{{unit.semiAnnualInstallment * 8 | number:'1.0-2' }}</td>
+							</tr>
+							<tr>
+								<td class="green">Remaining - at the time on possession </td>
+								<td class="green">{{ unit.final | number:'1.0-2'}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div *ngIf="planVisibility" class="payment_table_btn details_action_btn d-flex align-items-start">
+				<div class="ddBtnWrap">
+					<button type="button" name="button" class="ctaBtn contact_btn details_btn ddBtn mr-3"
+						(click)="toggleSharePdf()">Share PDF</button>
+					<div #shareDropDown class="drpDownWrap">
+						<div class="drpDown text-center"><span class="drpTitle">Share via</span>
+							<ul class="drpItems">
+								<li class="single"><a href="javascript:;"><i aria-hidden="true" class="fa fa-link"></i>
+										<p>Copy Url</p>
+									</a></li>
+								<li class="single"><a (click)="toggleSharePdf()" data-toggle="modal" data-target="#viaEmail"><i aria-hidden="true"
+											class="fa fa-envelope"></i>
+										<p>Via Email</p>
+									</a></li>
+								<li class="single"><a (click)="openWhatsappDialog()" data-toggle="modal" data-target="#viaWhatsapp"><i
+											class="fab fa-whatsapp"></i>
+										<p>Via Whatsapp</p>
+									</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a id="downloadPDF_Link" target="_blank" class="opacityHide"
+					href="https://paymentplans.gharbaar.com/"></a>
+				<button type="button" name="button" class="ctaBtn ctaDark generate_plan details_btn">Download
+					PDF</button>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+<div  #emailDialog id="viaEmail" tabindex="-1" role="dialog" aria-hidden="true" class="mainModal modal fade">
+	<div role="document" class="modal-dialog">
+		<div class="bgGrad">
+			<div class="modal-content forminput">
+				<button type="button" data-dismiss="modal" aria-label="Close" class="close"><span
+						aria-hidden="true">×</span></button>
+				<div class="modal-body ng-untouched ng-pristine ng-invalid">
+					<h3 class="modalTitle">Enter Recipient Details</h3>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<input id="shr_name" type="text" placeholder="Enter name" formcontrolname="name"
+									class="form-control ng-untouched ng-pristine ng-invalid" value="">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<input id="shr_email" type="email" placeholder="Enter email"
+									formcontrolname="primaryEmail"
+									class="form-control ng-untouched ng-pristine ng-invalid" value="">
+							</div>
+						</div>
+					</div>
+					<h3 class="modalTitle">Send a copy to Yourself (Optional)</h3>
+					<div class="form-group">
+						<input id="shr_copy_email" type="email" placeholder="Enter email"
+							formcontrolname="secondaryEmail" class="form-control ng-untouched ng-pristine ng-valid"
+							value="">
+					</div>
+					<button class="ctaBtn">Send </button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div #whatsappDialog id="viaWhatsapp" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="viaWhatsapp"
+	class="mainModal modal fade">
+	<div role="document" class="modal-dialog">
+		<div class="bgGrad">
+			<div class="modal-content">
+				<button type="button" data-dismiss="modal" aria-label="Close" class="close"><span
+						aria-hidden="true">×</span></button>
+				<div class="modal-body">
+					<h3 class="modalTitle">Share payment plan through whatsapp</h3>
+					<div class="form-group whatsapp-field"><span>+92</span>
+						<input id="shr_phone_no"  [(ngModel)]="whatsAppMobileNo" type="number" placeholder="Enter phone no. here"
+							class="form-control ng-untouched ng-pristine ng-valid" >
+					</div>
+					<button class="ctaBtn" (click)="shareOnWhatsapp()">Send </button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

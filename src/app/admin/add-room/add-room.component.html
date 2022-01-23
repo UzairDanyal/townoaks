@@ -1,0 +1,139 @@
+<app-spinner *ngIf="isLoading" ></app-spinner>
+<div class="container-fluid">
+ 
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-4 text-gray-800"> Add / Edit
+    </h1>
+
+    <form [formGroup]="room" (ngSubmit)="onSubmit()" class="row g-3 needs-validation form-row justify-content-around" novalidate>
+        <!-- <div class="form-row justify-content-around"> -->
+            <div class=" col-md-5">
+                <label for="inputType">Type</label>
+                <select id="inpuType" formControlName="type"  class="form-control">
+                  <option value="1" selected>Apartment</option>
+                  <option value="2">Office</option>
+                  <option value="3" >Shop</option>
+                </select>
+              </div>
+              <div class="col-md-5">
+                <label for="inputType">Status</label>
+                <select id="inpuType" formControlName="status" class="form-control">
+                  <option value="1">Available</option>
+                  <option value="2">Reserved</option>
+                  <option value="3">Sold</option>
+                </select>
+              </div>
+
+              <div *ngIf="room.value.type == '1'" class="col-md-5">
+                <label for="inputType">Floor</label>
+                <select id="inpuType" formControlName="floor" class="form-control">
+                  <option value="1" >1st </option>
+                  <option value="2">2nd</option>
+                  <option value="3">3rd</option>
+                  <option value="4" >4th </option>
+                  <option value="5" >5th </option>
+                  <option value="6" >6th </option>
+                  <option value="7" >7th </option>
+                  <option value="8" >8th </option>
+                  <option value="9" >9th </option>
+                  <option value="10" >10th </option>
+                  <option value="11" >11th </option>
+                </select>
+              </div>
+
+              <div *ngIf="room.value.type != '1'" class="col-md-5">
+                <label for="inputType">Floor</label>
+                <select id="inpuType" formControlName="floor" [value]="(room.value.type==3)&&'1'" class="form-control">
+                  <option value="-1" >Lower Ground</option>
+                  <option value="0" >Ground</option>
+                </select>
+              </div>
+              <div class="col-md-5">
+                <label for="inputArea" class="form-label">Area</label>
+                <input type="number" class="form-control" formControlName="area" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Provide Area in square foot
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <label for="inputUnit" class="form-label">Unit</label>
+                <input type="text" formControlName="number" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Provide Unit / Identity Number 
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <label for="inputBed">Bed</label>
+                <select id="inpuBed" formControlName="beds" class="form-control" >
+                  <option value="0">none</option>
+                  <option value= '2' >2 Bed</option>
+                  <option value= '3' >3 Bed</option>
+                  <option value= '4' >4 Bed</option>
+                </select>
+              </div>
+              
+              <div class="mt-4 col-md-11 off-set-1"> <h4>Price Details</h4></div>
+
+              <div class="col-md-5">
+                <label for="inputFloor" class="form-label">Per Square foot</label>
+                <input type="number" formControlName="priceSqFeet" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                provide per square foot price
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <label for="inputDownPayment" class="form-label">Down Payment</label>
+                <input type="number" formControlName="downPayment" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Provide down payment
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <label for="inputFloor" class="form-label">Monthly Installment</label>
+                <input type="number" formControlName="monthlyInstallment" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Provide monthly installment in rupees
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <label for="inputFloor" class="form-label">Semi Annual Installment</label>
+                <input type="number" formControlName="semiAnnualInstallment" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Provide semi annual installment in rupees
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <label for="inputFloor" class="form-label">On Possession</label>
+                <input type="number" formControlName="final" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Provide amount at the time of possession
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <label for="inputTotal" class="form-label">Total</label>
+                <input type="number" formControlName="totalPrice" class="form-control" id="inputTotal" required>
+                <div class="invalid-feedback">
+                  Provide total amount
+                </div>
+              </div>
+
+              <div class="col-md-11 justify-content-end mb-3 mt-4 row">
+                  <button type="button" class="btn btn-primary col-3" type="submit">Save</button>
+              </div>
+
+        <!-- </div> -->
+    </form>
+
+
+    
+</div>
+
+<notifier-container></notifier-container>   

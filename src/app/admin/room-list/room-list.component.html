@@ -1,0 +1,76 @@
+<app-spinner *ngIf="isLoading" ></app-spinner>
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <div class="table-responsive">
+        <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger"   class="row-border  table table-bordered table-striped table-hover">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Floor</th>
+                <th>Area</th>
+                <th>Unit</th>
+                <th>Bed</th>
+                <th>Price/Sqft</th>
+                <th>Downpayment</th>
+                <th>Monthly Installment</th>
+                <th>Semi Annual Installment</th>
+                <th>Possession</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of priceTableListData" >
+                <td (click)="navigate(item)" >{{ item.type }}</td>
+                <td (click)="navigate(item)">{{ item.status }}</td>
+                <td (click)="navigate(item)">{{ item.floor }}</td>
+                <td (click)="navigate(item)">{{ item.area }}</td>
+                <td (click)="navigate(item)">{{ item.number }}</td>
+                <td (click)="navigate(item)">{{ item.beds }}</td>
+                <td (click)="navigate(item)">{{ item.priceSqFeet | number:'1.0-0' }}</td>
+                <td (click)="navigate(item)">{{ item.downPayment | number:'1.0-0' }}</td>
+                <td (click)="navigate(item)">{{ item.monthlyInstallment | number:'1.0-0' }}</td>
+                <td (click)="navigate(item)">{{ item.semiAnnualInstallment | number:'1.0-0' }}</td>
+                <td (click)="navigate(item)">{{ item.final | number:'1.0-0' }}</td>
+                <td (click)="navigate(item)">{{ item.totalPrice | number:'1.0-0' }}</td>
+                <th><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal" (click)="setUnitId(item.id)" >Delete</button></th>
+              </tr>
+            </tbody>
+          </table>   
+                                  
+    </div> 
+ 
+
+                        <!-- <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+       
+                                  
+                            </div> 
+                        </div>
+                    </div> -->
+
+                    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ready to Delete?</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">Do uo really want to delete this unit ?</div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                                <button class="btn btn-primary" data-dismiss="modal" (click)="deleteUnit()">Yes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</div>

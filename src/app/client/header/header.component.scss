@@ -1,0 +1,280 @@
+
+.full-width {
+  width: 100%
+}
+
+section.af-navbar.header_space {
+  padding: 0 115px
+}
+
+.errors {
+  border-color: red
+}
+
+.top-btns .top-contact {
+  text-align: center;
+  background: #006aff;
+  padding: 2px 15px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative
+}
+
+.top-btns .top-contact a {
+  color: #fff;
+  font-size: 16px;
+  line-height: 35px;
+  font-family: Poppins-SemiBold;
+  border: 0
+}
+
+.top-btns .top-contact .rippleAnimElite:after,
+.top-btns .top-contact .rippleAnimElite:before {
+  background-color: #075595
+}
+
+.af-navbar-top button#dropdownMenu1 {
+  margin-top: 0
+}
+
+.mbl-half-logo {
+  display: none
+}
+
+.notLisiting .navbar-collapse {
+  width: calc(100% - 440px)
+}
+
+.navbar-collapse {
+  display: flex !important;
+  align-items: center
+}
+
+.notLisiting ul.nav.navbar-nav.navbar-right {
+  margin: 0 auto !important
+}
+
+.top-btns {
+  display: flex;
+  position: absolute;
+  right: 0;
+  align-items: center
+}
+
+.login-m .modal-dialog {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding: 0;
+  margin: 0
+}
+
+.login-m .modal-content {
+  border-radius: 0;
+  background-color: #f8f8f8;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.login-m .modal-content-m {
+  background-color: #f8f8f8;
+  position: relative;
+  z-index: 9
+}
+
+.login-m .modal-logo {
+  max-width: 183px;
+  margin: 0 auto 40px;
+  display: block
+}
+
+.login-m .modal-logo img {
+  width: 100%
+}
+
+.login-m .modal-header {
+  text-align: center;
+  border: none;
+  padding-top: 100px
+}
+
+.login-m .modal-title {
+  font-size: 22px;
+  color: #231f20;
+  font-family: Poppins-Medium;
+  font-weight: 600
+}
+
+.login-m .modal-header p {
+  font-size: 18px;
+  color: #677e92;
+  font-family: Poppins-Regular;
+  margin: 0;
+  font-weight: 500
+}
+
+.login-m .modal-title span {
+  color: #075595
+}
+
+.btnsNew-m {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 50px
+}
+
+.btnsNew-m a {
+  font-size: 18px;
+  font-family: Poppins-Regular;
+  text-align: center;
+  border-radius: 8px;
+  color: #fff;
+  padding: 16px;
+  background: #075595;
+  max-width: 312px;
+  width: 100%
+}
+
+.btnsNew-m a.second-btn {
+  max-width: 280px;
+  margin-top: 20px;
+  border: 2px solid #231f20;
+  background-color: #f8f8f8;
+  color: #231f20
+}
+
+.bottomImg-m {
+  height: 172px;
+  background-image: url('../../../assets/skyline-full_bg.c477643589395a11ff1a.svg');
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: 91%;
+  background-size: cover
+}
+
+#splashScreen {
+  padding: 0 !important
+}
+
+.login-m.splash-m .modal-content-m {
+  background-color: #075595
+}
+
+.login-m.splash-m .modal-content {
+  background-color: #075595;
+  justify-content: center
+}
+
+.login-m.splash-m .modal-logo {
+  max-width: 150px;
+  margin: 0 auto 10px;
+  display: block;
+  transform: translateY(100px);
+  transition: .7s ease
+}
+
+.login-m.splash-m .modal-header {
+  padding: 0
+}
+
+.animatedSplash {
+  overflow: hidden
+}
+
+.animatedSplash .splashAnimate {
+  transform: translateY(100px);
+  transition: .7s ease
+}
+
+.animatedSplash-In {
+  transform: translateY(0) !important
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+  .notLisiting .navbar-collapse {
+    width: calc(100% - 460px)
+  }
+
+  .mynavbar.mynavbar-dashboard .navbar ul li.userDropD {
+    width: 140px
+  }
+
+  .mynavbar.mynavbar-dashboard .dropdown .btn-default,
+  .mynavbar.mynavbar-dashboard a.addproperty {
+    font-size: 12px
+  }
+}
+
+@media (max-width:1200px) {
+  section.af-navbar.header_space {
+    padding: 0
+  }
+}
+
+@media(max-width:991px) {
+  .navbar-collapse {
+    display: block !important
+  }
+
+  .top-btns {
+    position: unset;
+    width: 100%;
+    flex-direction: column
+  }
+
+  .top-btns.top-btn-invest {
+    display: none
+  }
+
+  .mynavbar .navbar .nav.navbar-nav a {
+    justify-content: flex-start
+  }
+
+  .mynavbar .navbar ul li.prop-button a.addproperty {
+    background-color: #006aff;
+    font-family: Poppins-Regular;
+    font-weight: 400;
+    margin-bottom: 35px;
+    padding: 11px 15px !important;
+    font-size: 18px;
+    border-radius: 8px;
+    justify-content: center
+  }
+
+  .mynavbar .navbar ul li.prop-button a.addproperty span {
+    display: none
+  }
+
+  .top-btns .top-contact {
+    margin-top: 20px
+  }
+
+  .userProfileSide span {
+    color: #677e92;
+    font-family: Poppins-Regular;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+  }
+}
+
+@media(max-width:425px) {
+  .full-logo {
+    display: none
+  }
+
+  .mbl-half-logo {
+    display: block
+  }
+}
+
+.desk-nav {
+  visibility: hidden
+}

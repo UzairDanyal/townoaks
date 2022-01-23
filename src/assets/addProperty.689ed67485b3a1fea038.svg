@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36.074" height="35.923" viewBox="0 0 36.074 35.923">
+  <g id="blue_back" data-name="blue back" transform="translate(-452 -201)">
+    <g id="house-black-silhouette-without-door" transform="translate(452 197.109)">
+      <path id="Path_2415" data-name="Path 2415" d="M35.622,21.93a1.72,1.72,0,0,0-.141-2.461L19.359,5.361a2.01,2.01,0,0,0-2.621.03L.561,20.22a1.71,1.71,0,0,0-.078,2.458l.406.422a1.769,1.769,0,0,0,2.428.186L4.525,22.2v15.85a1.759,1.759,0,0,0,1.76,1.76h6.306a1.759,1.759,0,0,0,1.76-1.76V26.965h8.043V38.054a1.663,1.663,0,0,0,1.653,1.759h6.682a1.759,1.759,0,0,0,1.76-1.76V22.427l.746.655c.411.361,1.275.072,1.929-.648Z" transform="translate(0)" fill="#fff"/>
+    </g>
+    <circle id="Ellipse_105" data-name="Ellipse 105" cx="7.5" cy="7.5" r="7.5" transform="translate(468 204)" fill="#fff" stroke="#006aff" stroke-width="3"/>
+    <text id="_" data-name="+" transform="translate(471 216)" fill="#006aff" font-size="16" font-family="GoogleSans-Regular, Google Sans"><tspan x="0" y="0">+</tspan></text>
+  </g>
+</svg>

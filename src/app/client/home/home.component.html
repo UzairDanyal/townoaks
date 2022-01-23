@@ -1,0 +1,724 @@
+<section class="topNavLogo">
+  <div class="navInner">
+    <div class="logo-m"><a routerlink="" style="height: inherit;"><img src="assets/logo_townOaks2.png" alt="logo top"
+          style="height: inherit;" class="dsk-view"></a>
+    </div>
+    <div class="headerCta"><a rel="nofollow" (click)="viewPrices()" class="ctaBtn rippleAnimWrap"> Check Prices
+      </a></div>
+  </div>
+</section>
+<section class="headerPadding"></section>
+<div class="fixedCtaBtns align-items-center justify-content-center stickyBtns"><a (click)="viewPrices()"
+    class="ctaBtn">Unit
+    Prices</a></div>
+<section class="hero">
+  <div class="container-fluid">
+    <div class="inner">
+      <div class="heroContent text-center">
+        <h1 class="heroText">AK TOWN OAKS, WHERE LUXURY COMES HOME! </h1>
+        <h2 class="heroText">Apartments | Shops | Offices</h2>
+        <div class="heroImage"><img src="assets/hero.jpeg" alt="hero image" class="d-block"><a data-fancybox="floor plan"
+            data-caption="Standard Floor Plan for all the Floors (First to Eleventh Floor)" [href]="vm.planMap"
+            target="_blank" class="viewPlans fancybox"><svg width="28" height="26" viewBox="0 0 28 26" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.5932 4.13316C1.32627 3.86631 0.924899 3.7865 0.576189 3.93093C0.227479 4.07535 8.05934e-05 4.41559 0 4.79302V24.6665C0 25.182 0.417868 25.5998 0.933334 25.5998H20.8068C21.1842 25.5997 21.5245 25.3723 21.6689 25.0236C21.8133 24.6749 21.7335 24.2736 21.4667 24.0066L1.5932 4.13316ZM20.8068 24.6665H17.7333V23.7332C17.7333 23.4754 17.5244 23.2665 17.2667 23.2665C17.0089 23.2665 16.8 23.4754 16.8 23.7332V24.6665H14.9333V23.7332C14.9333 23.4754 14.7244 23.2665 14.4667 23.2665C14.2089 23.2665 14 23.4754 14 23.7332V24.6665H12.1333V23.7332C12.1333 23.4754 11.9244 23.2665 11.6667 23.2665C11.4089 23.2665 11.2 23.4754 11.2 23.7332V24.6665H9.33333V23.7332C9.33333 23.4754 9.1244 23.2665 8.86667 23.2665C8.60894 23.2665 8.4 23.4754 8.4 23.7332V24.6665H6.53333V23.7332C6.53333 23.4754 6.3244 23.2665 6.06667 23.2665C5.80894 23.2665 5.6 23.4754 5.6 23.7332V24.6665H3.73333V23.7332C3.73333 23.4754 3.5244 23.2665 3.26667 23.2665C3.00893 23.2665 2.8 23.4754 2.8 23.7332V24.6665H0.933334V22.7998H1.86667C2.1244 22.7998 2.33333 22.5909 2.33333 22.3332C2.33333 22.0754 2.1244 21.8665 1.86667 21.8665H0.933334V19.9998H1.86667C2.1244 19.9998 2.33333 19.7909 2.33333 19.5332C2.33333 19.2754 2.1244 19.0665 1.86667 19.0665H0.933334V17.1998H1.86667C2.1244 17.1998 2.33333 16.9909 2.33333 16.7332C2.33333 16.4754 2.1244 16.2665 1.86667 16.2665H0.933334V14.3998H1.86667C2.1244 14.3998 2.33333 14.1909 2.33333 13.9332C2.33333 13.6754 2.1244 13.4665 1.86667 13.4665H0.933334V11.5998H1.86667C2.1244 11.5998 2.33333 11.3909 2.33333 11.1332C2.33333 10.8754 2.1244 10.6665 1.86667 10.6665H0.933334V8.79982H1.86667C2.1244 8.79982 2.33333 8.59089 2.33333 8.33316C2.33333 8.07542 2.1244 7.86649 1.86667 7.86649H0.933334V4.79302L20.8133 24.6665H20.8068Z"
+                fill="#221F1F"></path>
+              <path
+                d="M4.19997 21.8665H12.9206C13.1093 21.8664 13.2794 21.7528 13.3516 21.5784C13.4238 21.404 13.3839 21.2034 13.2505 21.0699L4.52991 12.3493C4.39644 12.2159 4.19576 12.176 4.0214 12.2482C3.84705 12.3204 3.73335 12.4905 3.73331 12.6792V21.3998C3.73331 21.6576 3.94224 21.8665 4.19997 21.8665ZM4.66664 13.8062L11.7936 20.9332H4.66664V13.8062Z"
+                fill="#221F1F"></path>
+              <path
+                d="M21.2473 0.470839C21.1424 0.405241 21.0156 0.384024 20.895 0.411855C20.7744 0.439685 20.6698 0.514283 20.6042 0.619239L18.4076 4.13324H4.19997C3.94224 4.13324 3.73331 4.34217 3.73331 4.59991C3.73331 4.85764 3.94224 5.06657 4.19997 5.06657H13.0666V13.4666C13.0666 13.7243 13.2756 13.9332 13.5333 13.9332C13.791 13.9332 14 13.7243 14 13.4666V5.06657H18.6666C18.8275 5.06657 18.9771 4.98368 19.0624 4.84724L21.3957 1.11391C21.4613 1.00895 21.4825 0.882236 21.4547 0.761637C21.4269 0.641039 21.3523 0.536435 21.2473 0.470839Z"
+                fill="#221F1F"></path>
+              <path
+                d="M27.5334 4.1333H23.8C23.5423 4.1333 23.3334 4.34223 23.3334 4.59997C23.3334 4.8577 23.5423 5.06663 23.8 5.06663H27.0667V14.421L19.1693 14.4074C19.1575 14.4043 19.1455 14.4018 19.1334 14.4C19.1208 14.4 19.1105 14.406 19.0979 14.407L14.9334 14.4C14.6756 14.4 14.4667 14.6089 14.4667 14.8666C14.4667 15.1244 14.6756 15.3333 14.9334 15.3333L18.6667 15.3398V19.5333C18.6667 19.791 18.8756 20 19.1334 20C19.3911 20 19.6 19.791 19.6 19.5333V15.3412L27.0667 15.3543V24.6666H23.3334C23.0756 24.6666 22.8667 24.8756 22.8667 25.1333C22.8667 25.391 23.0756 25.6 23.3334 25.6H27.5334C27.7911 25.6 28 25.391 28 25.1333V4.59997C28 4.34223 27.7911 4.1333 27.5334 4.1333Z"
+                fill="#221F1F"></path>
+              <path
+                d="M23.1965 7.06998C23.0143 6.8878 22.7189 6.8878 22.5367 7.06998L20.5333 9.07339L18.5299 7.06998C18.3468 6.89313 18.0557 6.89566 17.8757 7.07567C17.6957 7.25568 17.6932 7.54674 17.87 7.72985L19.8734 9.73326L17.87 11.7367C17.7487 11.8538 17.7001 12.0273 17.7428 12.1905C17.7855 12.3537 17.9129 12.4811 18.076 12.5238C18.2392 12.5665 18.4127 12.5178 18.5299 12.3965L20.5333 10.3931L22.5367 12.3965C22.7198 12.5734 23.0108 12.5709 23.1909 12.3908C23.3709 12.2108 23.3734 11.9198 23.1965 11.7367L21.1931 9.73326L23.1965 7.72985C23.3787 7.54762 23.3787 7.25222 23.1965 7.06998Z"
+                fill="#221F1F"></path>
+            </svg><span>View Floor Plans</span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="statusWrap">
+  <div class="container_custom">
+    <div class="inner statusContent text-center">
+      <div class="scRow">
+        <div class="single d-flex align-items-baseline justify-content-center text-left focused pl-0">
+          <div class="statusTextOuter">
+            <p class="statusText">Construction In Progress</p>
+          </div>
+        </div>
+        <div class="single d-md-flex d-none align-items-baseline justify-content-center text-center pb-xl-5 pb-3 pr-0">
+          <p class="statusNumber mr-4">11</p>
+          <p class="statusText">Floors</p>
+        </div>
+      </div>
+      <div class="scRow" style="padding-bottom: 30px;">
+        <div class="single pl-0">
+          <div class="stInfo mx-auto">
+            <p class="statusNumber">2 Bed</p>
+            <p class="statusText">Apartments</p><span class="remaining">
+              <span class="slideAnim">16 Apartments Left</span>
+            </span>
+          </div>
+        </div>
+        <div class="single">
+          <div class="stInfo mx-auto">
+            <div class="textWrap">
+              <p class="statusNumber">3 Bed</p>
+              <p class="statusText">Apartments</p>
+            </div><span class="remaining"><span class="slideAnim">16 Apartments Left</span></span>
+          </div>
+        </div>
+        <div class="single pr-0">
+          <div class="stInfo fcStatus mx-auto">
+            <p class="statusNumber">4 Bed</p>
+            <p class="statusText">Apartments</p>
+            <span class="remaining"><span class="slideAnim">16 Apartments Left</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scRow">
+        <div class="single pl-0">
+          <div class="stInfo mx-auto">
+            <p class="statusNumber">Shops</p>
+            <span class="remaining">
+              <span class="slideAnim">16 Shops Left</span>
+            </span>
+          </div>
+        </div>
+        <div class="single pr-0">
+          <div class="stInfo mx-auto">
+            <p class="statusNumber">Offices</p>
+            <span class="remaining"><span class="slideAnim">16 Offices Left</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="overview-section" class="overviewWrap">
+  <div class="container_custom">
+    <div class="inner">
+      <div class="single overviewTitle">
+        <h2>Building Overview</h2>
+      </div>
+      <div class="single overviewContent">
+        <div class="ovTopText">
+          <p class="infoText"><strong>Project Start Date:</strong>July, 2021</p>
+          <p class="infoText"><strong>Predicted Completion Date:</strong> July, 2025</p>
+          <div class="infoText keyPoints"><strong>Approvals:</strong>
+            <ul>
+              <li>NOC Approved</li>
+              <li>TMA Approved</li>
+              <li>Govt. Amnesty Approved</li>
+            </ul>
+          </div>
+        </div>
+        <p class="infoText d-md-block d-sm-none d-block">The once distant vision is now
+          becoming a reality. Ak Town Oaks, a purely residential, luxury project stretching across eight Kanals is
+          positioned at a significantly convenient location of Islamabad. The luxury apartments here are being
+          designed to be earthquake resistant with an incorporated 24/7 Security system. With the completion of
+          this project, a long standing dream of visualizing a S.M.A.R.T living will turn into reality.</p>
+        <div class="overviewSilderDesktop d-md-block d-none" style="background-color:yellow">
+        </div>
+        <p class="infoText d-md-none d-sm-block d-none mt-4">The once distant vision is now
+          becoming a reality. Ak Town Oaks, a purely residential, luxury project stretching across eight Kanals is
+          positioned at a significantly convenient location of Islamabad. The luxury apartments here are being
+          designed to be earthquake resistant with an incorporated 24/7 Security system. With the completion of
+          this project, a long standing dream of visualizing a S.M.A.R.T living will turn into reality.</p>
+        <div class="mainSlider d-md-none d-block">
+        </div>
+        <div class="architect">
+          <h2>Developers <br> of Ak Town Oaks</h2>
+          <p class="infoText">AK Builders &amp; Developers, a real estate construction
+            company created in 2021 in Peshawar, provides independent and impartial services to their
+            customers. With almost two decades of excellence behind it, Win-Win Marketing &amp; Developers is a
+            name that is synonymous with luxury and fine living, also adhering to marvelous opportunities for
+            the business community and entrepreneurs. With a legacy of quality, innovation, and superior
+            planning for the high-end lifestyle market in Pakistan, Win-Win Marketing has cemented itself as one
+            of the leading Real Estate developers in Pakistan.</p>
+          <div class="architectInterview"><a data-fancybox="gallery_construction" class="playBtnWrap fancybox">
+              <div class="sightImage"><img src="assets/builders-thumbnail.jpeg" loading="lazy" alt="Architect Interview"></div>
+            </a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="statusWrap scheduleWrap">
+  <div class="container_custom">
+    <h2>Ak Town Oaks Payment Schedule</h2>
+    <div class="inner statusContent text-center">
+      <div class="scRow">
+        <div class="single d-flex align-items-baseline justify-content-center text-left focused pl-0">
+          <div class="statusTextOuter">
+            <p class="statusText">Bookings From <strong class="textGolden" style="font-family: Poppins-SemiBold;">PKR 4
+                lac</strong></p>
+          </div>
+        </div>
+        <div class="single">
+          <p class="statusNumber">15%</p>
+          <p class="statusText">Down Payment</p>
+        </div>
+      </div>
+      <div class="scRow">
+        <div class="single pl-0">
+          <div class="stInfo mr-md-auto">
+            <p class="statusNumber">40</p>
+            <p class="statusText">Monthly Installments</p>
+          </div>
+        </div>
+        <div class="single">
+          <div class="stInfo fcStatus mx-auto">
+            <div class="textWrap">
+              <p class="statusNumber">08</p>
+              <p class="statusText">Semi Annual Installments</p>
+            </div>
+          </div>
+        </div>
+        <div class="single pr-0">
+          <div class="stInfo ml-md-auto">
+            <p class="statusNumber">90 Days</p>
+            <div class="statusTextOuter">
+              <p class="statusText">Money Back guarantee</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="weProvide">
+  <div class="container_custom">
+    <div class="inner">
+      <div class="singleBox">
+        <div class="singleImgBox"><img src="assets/site/projects/e-park/no-comm.png" loading="lazy" alt="Icon"></div>
+        <p>No commission</p>
+      </div>
+      <div class="singleBox">
+        <div class="singleImgBox"><img src="assets/site/projects/e-park/direct-sale.png" loading="lazy" alt="Icon"></div>
+        <p>Direct sales</p>
+      </div>
+      <div class="singleBox">
+        <div class="singleImgBox"><img src="assets/site/projects/e-park/trusted.png" loading="lazy" alt="Icon"></div>
+        <p>Trusted &amp; simple</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="features-section" class="facilities">
+  <div class="container_custom">
+    <div class="facilitiesText">
+      <h2>Building Features and Specifications</h2>
+      <div class="amenitiesOpts">
+        <p class="itm"><span>Gated community</span></p>
+        <p class="itm"><span>Community center</span></p>
+        <p class="itm"><span>Two basement for dedicated car
+            parking</span></p>
+        <p class="itm"><span>Rooftop cafe</span></p>
+        <p class="itm"><span>Fast elevators & Cargo lift</span></p>
+        <p class="itm"><span>Indoor playland</span>
+        </p>
+        <p class="itm"><span>24 / 7 Security</span></p>
+        <p class="itm"><span>Masjid</span></p>
+        <p class="itm"><span>Separate Gas/Electricity connections</span>
+        </p>
+        <p class="itm"><span>Health Club</span></p>
+        <p class="itm"><span>Earthquake resistant</span></p>
+        <p class="itm"><span>Swimming pool on roof top</span></p>
+        <p class="itm"><span>Electricity backup generators</span></p>
+        <p class="itm"><span>Ground plus ten story building</span>
+        <p class="itm"><span>Laundry</span>
+        <p class="itm"><span>Balcony</span>
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="container_custom msWrap">
+      <div class="facilitiesSlider">
+        <div class="swiper-container fSlider swiper-container-initialized swiper-container-horizontal">
+      </div>
+    </div>
+    </div>
+</section>
+<section class="specsWrap">
+  <div class="container_custom">
+    <div class="inner">
+      <div class="specsText">
+        <h2>Ak Town Oaks Luxury Apartment Features</h2>
+      </div>
+      <div id="specsAccordion" role="tablist" aria-multiselectable="true"
+        class="panel-group specsAccordion accordionWrap border-0">
+        <div class="panel panel-default card">
+          <div role="tab" id="spec1" class="panel-heading card-header"><button aria-expanded="true"
+              data-toggle="collapse" aria-controls="clpSpec1" href="#clpSpec1" data-parent="#specsAccordion"
+              class="af-btn btn-link collapsed"> Spacious
+              Apartments </button></div>
+          <div id="clpSpec1" aria-labelledby="spec1" class="collapse in panel-collapse">
+            <div class="card-body">
+              <p>From top-of-line appliances and housewares, ample storage space to on-site
+                parking, the spacious apartments here offer everything you have dreamt of.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default card">
+          <div role="tab" id="spec2" class="panel-heading card-header"><button data-toggle="collapse" href="#clpSpec2"
+              data-parent="#specsAccordion" aria-expanded="false" aria-controls="clpSpec2"
+              class="af-btn btn-link collapsed"> Guest Bed
+            </button></div>
+          <div id="clpSpec2" aria-labelledby="spec2" class="collapse panel-collapse">
+            <div class="card-body">
+              <p>It’s not just a place for you to live in but also for your friends and
+                guests as it provides them with a comfortable area to stay in and have quality time with you.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default card">
+          <div role="tab" id="spec3" class="panel-heading card-header"><button data-toggle="collapse" href="#clpSpec3"
+              data-parent="#specsAccordion" aria-expanded="false" aria-controls="clpSpec3"
+              class="af-btn btn-link collapsed"> Servant Quarter
+            </button></div>
+          <div id="clpSpec3" aria-labelledby="spec3" class="collapse panel-collapse">
+            <div class="card-body">
+              <p>A small portion which can be utilized by your in-house employees</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default card">
+          <div role="tab" id="spec4" class="panel-heading card-header"><button data-toggle="collapse" href="#clpSpec4"
+              data-parent="#specsAccordion" aria-expanded="false" aria-controls="clpSpec4"
+              class="af-btn btn-link collapsed"> Designated
+              Balcony with apartments </button></div>
+          <div id="clpSpec4" aria-labelledby="spec4" class="collapse panel-collapse">
+            <div class="card-body">
+              <p>A semi-outdoor space is an external extension where you can sit in the
+                fresh air and have some peaceful, relaxing time with your family.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default card">
+          <div role="tab" id="spec5" class="panel-heading card-header"><button data-toggle="collapse" href="#clpSpec5"
+              data-parent="#specsAccordion" aria-expanded="false" aria-controls="clpSpec5"
+              class="af-btn btn-link collapsed"> Air Conditioning
+            </button></div>
+          <div id="clpSpec5" aria-labelledby="spec5" class="collapse panel-collapse">
+            <div class="card-body">
+              <p>An air conditioning system with a central cooling unit here processes fresh
+                air to give a cooling effect to your lifestyle.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default card">
+          <div role="tab" id="spec6" class="panel-heading card-header"><button data-toggle="collapse" href="#clpSpec6"
+              data-parent="#specsAccordion" aria-expanded="false" aria-controls="clpSpec6"
+              class="af-btn btn-link collapsed"> Walk-in Closet
+              &amp; Attached Bath </button></div>
+          <div id="clpSpec6" aria-labelledby="spec6" class="collapse panel-collapse">
+            <div class="card-body">
+              <p>Offering convenience with a walk-in wardrobe inside the bathroom to
+                minimize the hassle and time spent getting dressed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="unitTypes-section" class="unitsWrap">
+  <div class="container_custom">
+    <div class="inner">
+      <h2>Choose your Unit</h2>
+      <div class="row unitSingle">
+        <div class="col-xs-12 col-sm-6">
+          <div class="unitDetail">
+            <h3 class="uTitle d-md-block d-none">2 Bed Apartments</h3>
+            <p class="uText">Innovatively designed 2-bedroom apartments varying from
+              900-1150 Sq. Ft. sizes offer S.M.A.R.T features for each of its residents along with guaranteed
+              privacy and comfort.</p>
+            <div class="uFloorArea">
+              <p><span>900 - 1150 sq. ft.</span><small>Area</small></p>
+            </div><a  class="ctaBtn">Pick up Apartments</a>
+            <div class="unitSticker"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px"
+                viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                <defs>
+                  <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
+                </defs>
+                <circle cx="150" cy="100" r="75" fill="none"></circle>
+                <g>
+                  <use xlink:href="#circlePath" fill="none"></use><text fill="#C99827">
+                    <textPath xlink:href="#circlePath">78 Apartments Left.</textPath>
+                  </text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="choose_unit_image">
+            <h3 class="uTitle d-md-none d-block mb-4">2 Bed Apartments</h3><img src="assets/2-bed.jpg"  loading="lazy" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row unitSingle">
+        <div class="col-xs-12 col-sm-6">
+          <div class="choose_unit_image fcImage">
+            <h3 class="uTitle d-md-none d-block mb-4">3 Bed Apartments</h3><img src="assets/3-bed.jpg" loading="lazy" alt="">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="unitDetail">
+            <h3 class="uTitle d-md-block d-none">3 Bed Apartments</h3>
+            <p class="uText">The spacious 3 bedroom apartments boast an elegant design that
+              will leave you feeling like royalty and have many wonderful amenities such as servant
+              quarter/guest room and balcony.</p>
+            <div class="uFloorArea">
+              <p><span>1400 -1516 sq. ft.</span><small>Area</small></p>
+            </div><a  class="ctaBtn">Pick up Apartments</a>
+            <div class="unitSticker"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px"
+                viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                <defs>
+                  <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
+                </defs>
+                <circle cx="150" cy="100" r="75" fill="none"></circle>
+                <g>
+                  <use xlink:href="#circlePath" fill="none"></use><text fill="#C99827">
+                    <textPath xlink:href="#circlePath">78 Apartments Left.</textPath>
+                  </text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row unitSingle mb-0">
+        <div class="col-xs-12 col-sm-6">
+          <div class="unitDetail">
+            <h3 class="uTitle d-md-block d-none">4 Bed Apartments</h3>
+            <p class="uText">With top-notch amenities and ample storage space, these 4-bed
+              apartments of 1950 sq ft are designed to provide all the luxuries of life one could ever desire.
+            </p>
+            <div class="uFloorArea">
+              <p><span>1950 sq. ft.</span><small>Area</small></p>
+            </div><a  class="ctaBtn">Pick up Apartments</a>
+            <div class="unitSticker"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px"
+                viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                <defs>
+                  <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path>
+                </defs>
+                <circle cx="150" cy="100" r="75" fill="none"></circle>
+                <g>
+                  <use xlink:href="#circlePath" fill="none"></use><text fill="#C99827">
+                    <textPath xlink:href="#circlePath">78 Apartments Left.</textPath>
+                  </text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="choose_unit_image">
+            <h3 class="uTitle d-md-none d-block mb-4">4 Bed Apartments</h3><img src="assets/4-bed.jpg"  loading="lazy" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="supportersWrap">
+  <div class="container_custom">
+    <div class="inner">
+      <h2>Endorsed by the Best</h2>
+      <div class="supporterContent d-sm-flex d-none">
+        <div class="single">
+          <div class="supporterImage playBtnWrap"><img src="assets/karim.jpeg" loading="lazy" alt=""><a data-fancybox="edorsed"
+              class="playBtn fancybox"></a></div>
+          <span class="supporterName">Abdul Karim Khan</span><br />
+          <span class="supporterName small">Minister for commerce & industries</span>
+        </div>
+        <div class="single">
+          <div class="supporterImage playBtnWrap"><img src="assets/ismael.jpeg" loading="lazy" alt=""><a data-fancybox="edorsed"
+              class="playBtn fancybox"></a></div>
+          <span class="supporterName">Dr. M. Ismail</span><br />
+          <span class="supporterName small">Religious Scholar</span>
+        </div>
+        <div class="single">
+          <div class="supporterImage playBtnWrap"><img src="assets/khaliq.jpeg" loading="lazy" alt=""><a data-fancybox="edorsed"
+              class="playBtn fancybox"></a></div>
+          <span class="supporterName">Khaliq Ur Rehman</span><br />
+          <span class="supporterName small">Advisor to CM on Excise & Taxation</span>
+        </div>
+      </div>
+    </div>
+    <div class="mainSlider d-sm-none d-block text-center">
+      <div class="swiper-container mSlider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="sliderImage">
+              <div class="supporterImage playBtnWrap"><img src="assets/karim.jpeg" loading="lazy" height="250" alt=""></div>
+              <span class="supporterName">Abdul Karim Khan</span><br />
+              <span class="supporterName small">Minister for commerce & industries</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sliderImage">
+              <div class="supporterImage playBtnWrap"><img src="assets/ismael.jpeg" loading="lazy" height="250" alt=""></div>
+              <span class="supporterName">Dr. M. Ismail</span><br />
+              <span class="supporterName small">Religious Scholar</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sliderImage">
+              <div class="supporterImage playBtnWrap"><img src="assets/khaliq.jpeg" loading="lazy" height="250" alt=""></div>
+              <span class="supporterName">Abdul Karim Khan</span><br />
+              <span class="supporterName small">Minister for commerce & industries</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="docs-section" class="docWrap">
+  <div class="container_custom">
+    <div class="inner">
+      <h2>Downloads</h2>
+      <div class="docList row">
+        <div class="col-lg-4 col-sm-6 col-xs-6">
+          <div class="single">
+            <div class="singleTop"><img src="assets/site/projects/skyparkone/doc-icon.svg" alt=""  loading="lazy" class="docIcon"><span
+                class="docType">PDF</span><a target="_blank" href="assets/site/e-park/town-oaks-brochure.pdf"
+                class="downloadBtn"><img src="assets/site/projects/skyparkone/download-icon.svg" alt=""></a></div>
+            <p class="docName">Brochure</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-xs-6 ">
+          <div class="single">
+            <div class="singleTop"><img src="assets/site/projects/skyparkone/doc-icon.svg" alt=""  loading="lazy" class="docIcon"><span
+                class="docType">JPG</span><a
+                data-caption="Standard Floor Plan for all the Floors (First to Eleventh Floor)"
+                href="assets/site/images/ecsFloorPlanThumbnail.svg" data-fancybox="dp1"
+                class="downloadBtn fancybox"><img src="assets/site/projects/skyparkone/download-icon.svg"  loading="lazy" alt=""></a>
+            </div>
+            <p class="docName">Standard floor plan</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-xs-6">
+          <div class="single">
+            <div class="singleTop"><img src="assets/site/projects/skyparkone/doc-icon.svg" alt="" loading="lazy" class="docIcon"><span
+                class="docType">JPG</span><a data-caption="Ground floor plan"
+                href="assets/site/e-park/Payment-Plan.jpeg" target="_blank" class="downloadBtn" download><img  loading="lazy"
+                  src="assets/site/projects/skyparkone/download-icon.svg" alt=""></a></div>
+            <p class="docName">Payment Plan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="faqs-section" class="faqsWrap">
+  <div class="container_custom">
+    <div class="inner">
+      <h2>FAQs</h2>
+      <div id="faqsAccordion" role="tablist" aria-multiselectable="true" class="panel-group accordionWrap">
+
+        <div class="panel panel-default card">
+          <div role="tab" id="quest1" class="panel-heading card-header"><button data-toggle="collapse"
+              href="#collapseQuest1" data-parent="#faqsAccordion" aria-controls="collapseQuest1"
+              class="af-btn btn-link collapsed"> What is the
+              completion date of the Ak Town Oaks
+              project? </button></div>
+          <div id="collapseQuest1" role="tabpanel" aria-labelledby="quest1" class="collapse panel-collapse">
+            <div class="card-body">
+              <p>Construction will be completed in or before July, 2025.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default card">
+          <div role="tab" id="quest2" class="panel-heading card-header"><button data-toggle="collapse"
+              href="#collapseQuest2" data-parent="#faqsAccordion" aria-controls="collapseQuest2"
+              class="af-btn btn-link collapsed"> What will
+              be the anticipated
+              capital appreciation once Ak Town Oaks is completed? </button></div>
+          <div id="collapseQuest2" role="tabpanel" aria-labelledby="quest2" class="collapse panel-collapse">
+            <div class="card-body">
+              <p>Following completion of construction and full occupancy, the market value
+                of apartments is expected to be PKR 14000-15000/ sq feet and the market value of commercial
+                is expected to be 28000-30000/ sq feet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default card">
+          <div role="tab" id="quest3" class="panel-heading card-header"><button data-toggle="collapse"
+              href="#collapseQuest3" data-parent="#faqsAccordion" aria-controls="collapseQuest3"
+              class="af-btn btn-link collapsed"> What are
+              the anticipated rental
+              rates of residential units upon completion? </button></div>
+          <div id="collapseQuest3" role="tabpanel" aria-labelledby="quest3" class="collapse panel-collapse">
+            <div class="card-body">
+              <p>After completion of project, rental values are expected to be:</p>
+              <ul>
+                <li>2 bed - 30K - 40K</li>
+                <li>3 beds - 50k - 70k</li>
+                <li>4 beds - 90k – 110k</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default card">
+          <div role="tab" id="quest4" class="panel-heading card-header"><button data-toggle="collapse"
+              href="#collapseQuest4" data-parent="#faqsAccordion" aria-controls="collapseQuest4"
+              class="af-btn btn-link collapsed"> What is the
+              documentation
+              procedure for reservation and purchase at Ak Town Oaks? </button></div>
+          <div id="collapseQuest4" role="tabpanel" aria-labelledby="quest4" class="collapse panel-collapse">
+            <div class="card-body">
+              <p>Ak Town Oaks will secure the client interest through installment agreement
+                signatures and right of possession during the term of the installment agreement. Upon completion
+                of installment payment terms, full title, right, and interest will be documented and conveyed to
+                client from Faysal Town society office.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="aboutUsWrap">
+  <div class="container_custom">
+    <div id="aboutUsAccordion" role="tablist" aria-multiselectable="true" class="panel-group abtUsAccordion">
+      <div class="panel panel-default card">
+        <div role="tab" id="abt1" class="panel-heading card-header"><a hred="javascript:;" data-toggle="collapse"
+            href="#collapseAbt1" data-parent="#aboutUsAccordion" aria-controls="collapseAbt1" class="accBtn collapsed">
+            About University Town, Peshawar </a></div>
+        <div id="collapseAbt1" role="tabpanel" aria-labelledby="abt1" class="collapse panel-collapse">
+
+          <div class="card-body mb-4">
+            Description of University Town peshawar
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default card ceoBox">
+        <div role="tab" id="abt2" class="panel-heading card-header"><a hred="javascript:;" data-toggle="collapse"
+            href="#collapseAbt2" data-parent="#aboutUsAccordion" aria-controls="collapseAbt2" class="accBtn"> CEO
+            Message </a>
+        </div>
+        <div id="collapseAbt2" role="tabpanel" aria-labelledby="abt2" class="collapse panel-collapse show">
+          <div class="card-body">
+            <ul class="ceoCards">
+              <li class="single">
+                <div class="abtCeo"><img src="assets/furqan.jpeg"  loading="lazy" alt="" class="sImage">
+                  <p>CEO - AK Town Oaks</p>
+                  <p>CEO - AK Builders</p>
+                </div>
+                <div class="sText">
+                  <h3 class="sTitle">Ahmad Furqan Khalil</h3>
+                  <p class="sInfo"></p>
+                  <p class="sInfo">AK Town Oaks, A project of AK Builders and Developers, mainly comprises of apartments
+                    with the ground floor having offices and shops.
+                    Backed by a group of visionaries / trustable, ambitious, forward-thinking leaders combined with
+                    entrepreneur, AK Town Oaks is a unique
+                    apartment building planned in the heart of university town, located right in the middle of Peshawar.
+                    What distinguishes our project from
+                    others in the vicinity is its ideal location with easy access, peaceful surrounding, exclusive
+                    modern architecture, spacious, well ventilated,
+                    and aestheyically designed apartments having all the amenities for residents under one roof. If you
+                    wish to invest in a safe and secure place
+                    to multiply your investment or want to enjoy luxurious and peaceful living, then AK Town Oaks has a
+                    perfect solution for your hard-earned
+                    money.</p>
+                  <p class="sInfo">Thank you.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="locationWrap">
+  <div class="container_custom">
+    <div class="inner">
+      <div class="locationText">
+        <h2>Location on Map</h2>
+        <h3 class="lctTitle">Sahibzada Abdul Qayyum Road</h3>
+        <h3 class="lctTitle lctSubTitle">University Town, Peshawar</h3>
+      </div>
+      <div class="lctMap"><iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d930.4520316017334!2d71.50105975678632!3d33.989904635007996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d917fd1483c903%3A0xd7cdd8a351a014ff!2sAK%20TOWN%20OAKS!5e0!3m2!1sen!2s!4v1640698749390!5m2!1sen!2s"
+          width="600" height="450" style="border:0; max-width: 100%;" allowfullscreen="" loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+<section class="ftrWrap">
+  <div class="container_custom">
+    <div class="inner">
+      <p>Copyright © {{year}} AK Town Oaks. All Rights Reserved.</p>
+      <p class="rndmText">Made with <i class="fa fa-heart"></i> by <a href="https://www.softosol.com">SoftoSol</a></p>
+      <div class="socialLinks">
+        <p><a target="_blank" href="https://www.facebook.com/aktownoaks"><i aria-hidden="true"
+              class="fab fa-facebook"></i></a></p>
+        <p><a target="_blank" href="https://www.instagram.com/aktownoaks/"><i aria-hidden="true"
+              class="fab fa-instagram"></i></a></p>
+
+        <p><a target="_blank" [routerLink]="['/Admin/Signin']" routerLinkActive="active"><i aria-hidden="true"
+              class="fas fa-user-lock"></i></a></p>
+
+
+
+        <!-- <p ><a target="_blank"
+                  href="https://www.youtube.com/playlist?list=PLIYifGiou6x5IDG2-Z9jV5ofgLfRiv4Xu"><i
+                    aria-hidden="true" class="fab fa-youtube-play"></i></a></p> -->
+      </div>
+    </div>
+  </div>
+</section>
+<div id="guarantee" tabindex="-1" role="dialog" aria-labelledby="guaranteeTitle" aria-hidden="true"
+  class="modal fade main-modal genModal">
+  <div role="document" class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="" class="modal-title">Your Guarantee of 100% Satisfaction</h5><button type="button" data-dismiss="modal"
+          aria-label="Close" class="close"><svg viewBox="0 0 24 24" role="img" aria-label="Close" focusable="false"
+            style="width: 18px; height: 18px; display: block; fill: #C99827;">
+            <path
+              d="m23.25 24c-.19 0-.38-.07-.53-.22l-10.72-10.72-10.72 10.72c-.29.29-.77.29-1.06 0s-.29-.77 0-1.06l10.72-10.72-10.72-10.72c-.29-.29-.29-.77 0-1.06s.77-.29 1.06 0l10.72 10.72 10.72-10.72c.29-.29.77-.29 1.06 0s .29.77 0 1.06l-10.72 10.72 10.72 10.72c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22"
+              fill-rule="evenodd"></path>
+          </svg></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-content-inner">
+          <p>The Ak Town Oaks Team is truly dedicated to exceeding your every expectation.</p>
+          <p>When you invest in any of our projects, you can be assured the entire
+            team--developers, financiers, designers, architects, craftsmen, and each sales executive--is
+            personally and professionally dedicated to your complete and total satisfaction.</p>
+          <p>With that in mind, we offer attractive payment terms that exceed all industry
+            standards.</p>
+          <p><span>Ak Town Oaks’s Iron-clad 100% Satisfaction Guarantee</span>
+          </p>
+          <p>If, at any time following remittance of 30%(Buyer) Down Payment, up to and
+            including a 90-day period following final payment and occupancy, you withdraw your interest from
+            Ak Town Oaks (Developer), Buyer will receive a total refund (less a 2% processing fee) of any and all
+            monies paid on Buyer’s account upon receipt by Developer of Buyer’s written intent to cancel the
+            Purchase and Payment Agreement. Upon receipt of Buyer’s written notice to withdraw any and all
+            interest in Ak Town Oaks, the Developer will return Buyer’s funds within 45 business days.</p>
+          <p>This 100% Satisfaction Guarantee is in force between Developer and Buyer
+            immediately upon the date of initial 30% Down Payment deposit to Developer’s Account, and remains in
+            force for 90 calendar days.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
